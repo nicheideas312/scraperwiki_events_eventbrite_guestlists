@@ -1,0 +1,5 @@
+<a href="https://api.scraperwiki.com/api/1.0/datastore/sqlite?format=htmltable&name=scraperwiki_events_eventbrite_guestlists&query=select%20date(%60first_scraped%60%2C'unixepoch')%20as%20%60Date%20signed%20up%60%2C%20%60Who%20am%20I%60%2C%60Twitter%20Handle%60%20from%20%60ny%60%20ORDER%20BY%20%60Who%20am%20I%60%20DESC%2C%60first_scraped%60%3B">This table</a> might be helpful.
+
+@select date(`first_scraped`,'unixepoch') as `Date signed up`, `Who am I`,`Twitter Handle` from `ny` ORDER BY `Who am I` DESC,`first_scraped`;@
+
+I think the next step is to "automatically update a Twitter list":https://dev.twitter.com/docs/api/1/post/lists/members/create_all.
